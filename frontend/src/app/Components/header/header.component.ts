@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
   logout() {
     if (isPlatformBrowser(this.platformId)) {
       localStorage.clear();
+      this.token = null;
       this.router.navigate(['/login']);
 
     }
