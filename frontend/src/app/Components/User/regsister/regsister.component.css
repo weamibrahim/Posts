@@ -1,0 +1,17 @@
+.backgroundform{
+    background-image: url(https://img.freepik.com/free-photo/hand-pushing-button-touch-screen_1112-491.jpg?t=st=1711935437~exp=1711939037~hmac=1a1833043983dc68d10139e42df8301586867f47ea312ea9ef71e9716c768995&w=900);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+form{
+    border: 10px solid rgb(254, 254, 254);
+    border-radius: 10px;
+    max-width: 500px;
+    margin:  auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.558);
+}

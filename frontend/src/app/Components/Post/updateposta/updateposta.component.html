@@ -1,0 +1,18 @@
+<form class="container-fluid">
+  <h3 class="text-center my-4 fst-italic">Update Post</h3>
+  <div class="row justify-content-center">
+    <div class="col-lg-4 shadow p-4 mb-5 bg-body-tertiary rounded">
+  <div class="mb-3">
+    <label for="updatePostTitle" class="form-label">Title</label>
+    <input type="text" class="form-control" id="updatePostTitle" [(ngModel)]="Title" required name="Title">
+  </div>
+  <div class="mb-3">  
+    <label for="updatePostBody" class="form-label">Body</label>
+    <textarea class="form-control" id="updatePostBody" [(ngModel)]="Body" required name="Body"></textarea>
+  </div>
+  <div class="d-flex justify-content-center my-2">
+  <button type="submit" class="btn btn-primary" (click)="updatePost()">Update Post</button>
+</div>
+</div>
+</div>
+</form>

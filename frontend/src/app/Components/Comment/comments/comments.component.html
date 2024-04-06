@@ -1,0 +1,23 @@
+<div>
+  <div class="w-75 m-auto">
+
+
+<div class="input-group mb-3 ">
+  <input type="text" class="form-control" placeholder="Recipient's comment" aria-label="Recipient's comment" aria-describedby="button-addon2"  [(ngModel)]="body" name="body" >
+  <button class="btn btn-outline-info" type="button" id="button-addon2" (click)="createComment()">createComment</button>
+</div>
+
+<div class=" card my-2" *ngFor="let comment of comments">
+  <div class="p-4 " >
+                
+            
+               
+    <i class="fa-regular fa-user mx-1"></i> {{comment.userId.name}}
+   <div class="d-flex justify-content-between">
+  
+   <div class="my-3">{{comment.body}}</div>
+   
+   </div>
+   </div>
+   </div>
+</div></div>

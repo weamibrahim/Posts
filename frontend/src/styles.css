@@ -1,0 +1,11 @@
+.background {
+    background-image: linear-gradient(to right, rgb(144, 192, 255), rgb(208, 220, 235), rgb(229, 236, 246));
+ 
+   /* Adjust the maximum height as needed */
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+    margin: 15px;
+    border-radius: 10px;
+}

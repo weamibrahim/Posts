@@ -1,0 +1,17 @@
+
+
+<div class="container-fluid  my-4" *ngFor="let post of posts  " >
+  <div class="row justify-content-center">
+    <div class="col-lg-5 shadow p-4 mb-5 bg-body-tertiary rounded">
+
+    
+  <div  class="p-2" >  <i class="fa-regular fa-user mx-1"></i> {{post.userId.name}}</div>
+
+  <div class="background card p-2  rounded">
+    <p class="fs-2">{{post.body}}</p>
+  </div>
+
+
+  <app-comments  [postId]="post._id"></app-comments>
+</div>
+
