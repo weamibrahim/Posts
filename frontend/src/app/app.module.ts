@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './Components/Post/posts/posts.component';
-import { PostdetailsComponent } from './Components/Post/postdetails/postdetails.component';
+
 import { CreatepostaComponent } from './Components/Post/createposta/createposta.component';
 import { UpdatepostaComponent } from './Components/Post/updateposta/updateposta.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -31,7 +31,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
   declarations: [
     AppComponent,
     PostsComponent,
-    PostdetailsComponent,
+   
     CreatepostaComponent,
     UpdatepostaComponent,
     HeaderComponent,
