@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <i class="fa-solid fa-pen mx-2"></i>
+      <i class="fa-solid fa-pen mx-2 fs-3"></i>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse fs-3" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <ng-container *ngIf="!token">
             <li class="nav-item dropdown">
@@ -16,10 +16,11 @@
           </ng-container>
           <ng-container *ngIf="token">
             <li class="nav-item dropdown">
-              <a class="text-decoration-none nav-link" routerLink="/posts">home</a>
+              
+              <a class="text-decoration-none nav-link" routerLink="/posts"><i class="fa-solid fa-house"></i> home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="text-decoration-none nav-link" routerLink="/mypost">myPosts</a>
+              <a class="text-decoration-none nav-link" routerLink="/mypost"> <i class="fa-solid fa-newspaper mx-2"></i>MyPosts</a>
             </li>
           </ng-container>
         </ul>

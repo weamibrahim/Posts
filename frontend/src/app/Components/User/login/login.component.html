@@ -4,7 +4,7 @@
       <img src="https://img.freepik.com/free-photo/finger-pressing-virtual-lock_1112-490.jpg?t=st=1711929880~exp=1711933480~hmac=c59a610a91236678cb72c94f129eb489cbda0cb324634cd487d48be5d76f8496&w=740" class="w-100 h-100" alt="Image">
     </div>
     <div class="col-md-6">
-      <h3 class="text-center my-4 fst-italic">Login</h3>
+      <h3 class="text-center my-4 fst-italic">Login<i class="fa-solid fa-arrow-right mx-3"></i></h3>
       <form class="my-4 d-flex flex-column align-items-center ">
         <div class="form-group">
           <label for="email">Email:</label>
@@ -16,6 +16,7 @@
         </div>
         <div class="form-group d-flex justify-content-center my-3">
           <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+          
         </div>
         <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
         <p>Don't have an account? <a routerLink="/register">Register</a></p>

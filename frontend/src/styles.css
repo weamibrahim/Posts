@@ -1,11 +1,19 @@
 .background {
-    background-image: linear-gradient(to right, rgb(144, 192, 255), rgb(208, 220, 235), rgb(229, 236, 246));
+    /* background-image: linear-gradient(to right, rgb(144, 192, 255), rgb(208, 220, 235), rgb(229, 236, 246)); */
  
-   /* Adjust the maximum height as needed */
+    background-image: url('./assets/fantasy-style-galaxy-background.jpg');
+   /* Adjust the maximum height as eeded */
   
     background-size: cover;
     background-repeat: no-repeat;
     word-wrap: break-word;
-    margin: 15px;
-    border-radius: 10px;
+ 
+  
 }
+
+.groundPost{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    border: 10px solid rgb(255, 255, 255);
+    
+    }
