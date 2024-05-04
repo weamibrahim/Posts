@@ -8,6 +8,7 @@ import { ApolloQueryResult } from '@apollo/client/core';
 })
 export class MyPostComponent implements OnInit {
 
+  loading: boolean = false;
   userId = JSON.parse(localStorage.getItem('user') || '{}');
   
 
@@ -21,6 +22,7 @@ export class MyPostComponent implements OnInit {
   }
 
   fetchPosts(): void {
+    this.loading = true;
     this.apollo
       .watchQuery({
         query: gql`
@@ -39,6 +41,7 @@ export class MyPostComponent implements OnInit {
       })
       .valueChanges.subscribe((result: ApolloQueryResult<any>) => {
         this.myposts = result.data.postsGetByUserId;
+        this.loading= false;
         console.log(this.myposts);
       });
   }

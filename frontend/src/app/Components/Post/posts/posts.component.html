@@ -1,6 +1,14 @@
 <div class="background">
   <div class="d-flex justify-content-center">
-    <img src="../../../../assets/animation.gif" alt="" class="w-25 h-25">
+    <img src="../../../../assets/animation.gif" alt="" class=" animateImg">
+
+  </div>
+
+ 
+  <div class="  flex-column   " *ngIf="loading">
+    <div class=" loadingBar "></div>
+    <div class=" loadingBar "></div>
+    <div class=" loadingBar "></div>
   </div>
 
 <div class=" container-fluid" *ngFor="let post of posts  " >

@@ -8,7 +8,7 @@ import { ApolloQueryResult } from '@apollo/client/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-
+  loading: boolean = false;
   posts: any[] = [];
   token: string | null = localStorage.getItem('token');
 
@@ -24,6 +24,7 @@ export class PostsComponent implements OnInit {
   }
 
   fetchPosts(): void {
+    this.loading = true;
     this.apollo
       .watchQuery({
         query: gql`
@@ -46,9 +47,11 @@ export class PostsComponent implements OnInit {
         next: (result: ApolloQueryResult<any>) => {
           console.log("alldata", result.data.postsGet);
           this.posts = result.data.postsGet;
+          this.loading = false;
         },
         error: (error) => {
           console.error('Error fetching posts:', error);
+          this.loading = false;
         }
       });
   }
